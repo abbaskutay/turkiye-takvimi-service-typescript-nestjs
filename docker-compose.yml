@@ -1,0 +1,9 @@
+services:
+  turkiye-takvimi-service:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      TURKTAKVIM_BASE_URL: https://www.turktakvim.com
+      HTTP_TIMEOUT_MS: 10000
